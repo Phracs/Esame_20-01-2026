@@ -7,7 +7,7 @@ class View:
         self._page = page
         self._page.title = "Programmazione Avanzata - Primo Appello - iTunes"
         self._page.horizontal_alignment = "CENTER"
-        self._page.theme_mode = ft.ThemeMode.LIGHT
+        self._page.theme_mode = ft.ThemeMode.DARK
         self._controller = None
 
         # Alert
@@ -51,6 +51,7 @@ class View:
         self.txt_result = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
         self._page.controls.append(self.txt_result)
         self._page.update()
+
 
     @property
     def controller(self):
